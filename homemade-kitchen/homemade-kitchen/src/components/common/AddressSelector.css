@@ -1,0 +1,194 @@
+.address-selector {
+    width: 100%;
+  }
+  
+  .saved-addresses {
+    margin-bottom: 15px;
+  }
+  
+  .address-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .address-item:hover {
+    border-color: #ccc;
+    background-color: #f9f9f9;
+  }
+  
+  .address-item.selected {
+    border-color: #FF6B35;
+    background-color: #FFF0EB;
+  }
+  
+  .address-item-icon {
+    margin-right: 15px;
+    color: #555;
+  }
+  
+  .address-item-details {
+    flex-grow: 1;
+  }
+  
+  .address-item-title {
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
+  
+  .address-item-text {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .address-item-actions {
+    display: flex;
+    gap: 5px;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+  }
+  
+  .address-item:hover .address-item-actions {
+    opacity: 1;
+  }
+  
+  .address-action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .address-action-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  .address-action-btn.edit {
+    color: #2196F3;
+  }
+  
+  .address-action-btn.delete {
+    color: #F44336;
+  }
+  
+  .add-address-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 12px;
+    border: 1px dashed #ddd;
+    background: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #FF6B35;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  
+  .add-address-button:hover {
+    border-color: #FF6B35;
+    background-color: #FFF0EB;
+  }
+  
+  /* Форма добавления адреса */
+  .address-form {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .form-title {
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.1rem;
+  }
+  
+  .form-row {
+    margin-bottom: 15px;
+  }
+  
+  .form-row.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.95rem;
+  }
+  
+  .form-group textarea {
+    height: 80px;
+    resize: vertical;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .cancel-button {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #555;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  
+  .cancel-button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .save-button {
+    background-color: #FF6B35;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  
+  .save-button:hover {
+    background-color: #e85a24;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .form-row.two-columns {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  }

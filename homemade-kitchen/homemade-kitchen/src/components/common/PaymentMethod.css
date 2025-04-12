@@ -1,0 +1,96 @@
+.payment-method {
+    width: 100%;
+  }
+  
+  .payment-option {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .payment-option:hover {
+    border-color: #ccc;
+    background-color: #f9f9f9;
+  }
+  
+  .payment-option.selected {
+    border-color: #FF6B35;
+    background-color: #FFF0EB;
+  }
+  
+  .payment-option-icon {
+    margin-right: 15px;
+    color: #555;
+  }
+  
+  .payment-option-details {
+    flex-grow: 1;
+  }
+  
+  .payment-option-title {
+    font-weight: 500;
+    margin-bottom: 3px;
+  }
+  
+  .payment-option-description {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .payment-selected-indicator {
+    color: #FF6B35;
+  }
+  
+  /* Детали карты */
+  .card-details {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    margin-top: 15px;
+  }
+  
+  .card-input-group {
+    margin-bottom: 15px;
+  }
+  
+  .card-input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .card-input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.95rem;
+  }
+  
+  .card-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  
+  .save-card-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .card-row {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  }

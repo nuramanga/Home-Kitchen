@@ -1,0 +1,444 @@
+/* OrderTracking.css */
+
+.tracking-page {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+    min-height: 100vh;
+    padding-bottom: 60px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .tracking-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Уведомление о статусе */
+  .order-status-notification {
+    display: flex;
+    align-items: center;
+    background-color: #FFF0EB;
+    border-left: 4px solid #FF6B35;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+  
+  .status-icon {
+    color: #FF6B35;
+    margin-right: 15px;
+  }
+  
+  .status-message {
+    font-weight: 500;
+    color: #555;
+  }
+  
+  /* Содержимое отслеживания */
+  .tracking-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  /* Прогресс отслеживания */
+  .tracking-progress {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+  }
+  
+  .tracking-progress h2 {
+    margin: 0 0 20px 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .progress-steps {
+    position: relative;
+  }
+  
+  .progress-steps::before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: 16px;
+    width: 2px;
+    height: calc(100% - 50px);
+    background-color: #e0e0e0;
+    z-index: 1;
+  }
+  
+  .progress-step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .step-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    color: #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    flex-shrink: 0;
+  }
+  
+  .progress-step.completed .step-icon {
+    background-color: #FF6B35;
+    color: white;
+  }
+  
+  .step-info {
+    flex-grow: 1;
+  }
+  
+  .step-title {
+    font-weight: 500;
+    margin-bottom: 3px;
+  }
+  
+  .step-time {
+    font-size: 0.85rem;
+    color: #888;
+  }
+  
+  .delivery-eta {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+  }
+  
+  .eta-icon {
+    color: #FF6B35;
+    margin-right: 10px;
+  }
+  
+  /* Секция карты */
+  .tracking-map-section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+  }
+  
+  .tracking-map-section h2 {
+    margin: 0 0 20px 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .tracking-map {
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .courier-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .courier-profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .courier-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  .courier-profile h3 {
+    margin: 0 0 5px 0;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .courier-transport {
+    font-size: 0.85rem;
+    color: #666;
+  }
+  
+  .courier-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .action-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #FF6B35;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+  
+  .action-button:hover {
+    background-color: #e85a24;
+  }
+  
+  /* Детали заказа */
+  .order-details h2 {
+    margin: 0 0 20px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .order-details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .order-info-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+  }
+  
+  .order-info-card h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .order-number {
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .order-date {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .order-items {
+    margin-bottom: 20px;
+  }
+  
+  .order-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .item-quantity {
+    font-size: 0.9rem;
+    color: #888;
+    margin-right: 10px;
+  }
+  
+  .item-name {
+    flex-grow: 1;
+  }
+  
+  .item-price {
+    font-weight: 500;
+  }
+  
+  .order-summary {
+    border-top: 1px solid #f0f0f0;
+    padding-top: 15px;
+  }
+  
+  .summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    color: #666;
+  }
+  
+  .summary-total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .chef-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .chef-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  .chef-name {
+    font-weight: 500;
+    margin-bottom: 3px;
+  }
+  
+  .chef-cuisine {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  
+  .view-restaurant-link {
+    font-size: 0.9rem;
+    color: #FF6B35;
+    text-decoration: none;
+  }
+  
+  .view-restaurant-link:hover {
+    text-decoration: underline;
+  }
+  
+  .delivery-address {
+    margin-bottom: 25px;
+  }
+  
+  .address-line {
+    margin-bottom: 5px;
+  }
+  
+  .address-details {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .address-city {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .payment-title {
+    margin-top: 25px;
+  }
+  
+  .payment-method {
+    color: #555;
+  }
+  
+  .order-help {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .order-help h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .order-help p {
+    color: #666;
+    margin-bottom: 15px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .support-link {
+    display: inline-block;
+    background-color: #FF6B35;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+  
+  .support-link:hover {
+    background-color: #e85a24;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 992px) {
+    .tracking-content {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .courier-info {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .courier-profile {
+      margin-bottom: 15px;
+    }
+    
+    .courier-actions {
+      width: 100%;
+      justify-content: space-between;
+    }
+    
+    .action-button {
+      flex: 1;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .order-status-notification {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .status-icon {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    
+    .tracking-map {
+      height: 250px;
+    }
+  }

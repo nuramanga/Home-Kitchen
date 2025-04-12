@@ -1,0 +1,243 @@
+/* HomePage.css */
+
+/* Основные стили */
+.home-page {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Герой-секция */
+  .hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    padding: 0 20px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Секция категорий */
+  .category-section {
+    margin-bottom: 40px;
+  }
+  
+  /* Секция баннеров */
+  .banners-section {
+    margin-bottom: 50px;
+  }
+  
+  /* Секция популярных блюд */
+  .popular-dishes-section {
+    margin-bottom: 50px;
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .see-all-link {
+    color: #FF6B35;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+  }
+  
+  .see-all-link:hover {
+    text-decoration: underline;
+  }
+  
+  .dishes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+  }
+  
+  /* Секция поваров поблизости */
+  .nearby-chefs-section {
+    margin-bottom: 50px;
+  }
+  
+  .chefs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Секция "Как это работает" */
+  .how-it-works-section {
+    background-color: #f8f8f8;
+    padding: 60px 0;
+    margin-bottom: 50px;
+  }
+  
+  .how-it-works-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: center;
+  }
+  
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .step-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #FF6B35;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .step h3 {
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .step p {
+    color: #666;
+  }
+  
+  /* Секция "Стать поваром" */
+  .become-chef-section {
+    margin-bottom: 60px;
+  }
+  
+  .become-chef-content {
+    display: flex;
+    align-items: center;
+    background-color: #fff8f5;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .text-content {
+    flex: 1;
+    padding: 40px;
+  }
+  
+  .text-content h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .text-content p {
+    margin-bottom: 25px;
+    color: #555;
+    font-size: 1.1rem;
+  }
+  
+  .image-content {
+    flex: 1;
+    height: 400px;
+  }
+  
+  .image-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .primary-button {
+    background-color: #FF6B35;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .primary-button:hover {
+    background-color: #e85a24;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+    
+    .become-chef-content {
+      flex-direction: column;
+    }
+    
+    .image-content {
+      width: 100%;
+      height: 250px;
+    }
+    
+    .steps-grid {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-section {
+      height: 400px;
+    }
+    
+    .hero-content h1 {
+      font-size: 1.8rem;
+    }
+    
+    .section-header h2 {
+      font-size: 1.5rem;
+    }
+  }

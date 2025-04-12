@@ -1,0 +1,71 @@
+.dish-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .dish-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dish-image {
+    height: 180px;
+    overflow: hidden;
+  }
+  
+  .dish-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .dish-card:hover .dish-image img {
+    transform: scale(1.05);
+  }
+  
+  .dish-content {
+    padding: 15px;
+  }
+  
+  .dish-name {
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .dish-chef {
+    margin: 0 0 12px 0;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .dish-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dish-rating {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  .rating-icon {
+    color: #FFB800;
+    fill: #FFB800;
+  }
+  
+  .dish-price {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #FF6B35;
+  }
